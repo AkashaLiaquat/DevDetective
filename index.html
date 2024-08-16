@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevDetective</title>
+  <link rel="icon" href="./images/detective.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+     <div class="wrapper">
+      <div class="container">
+        <header class="header-container">
+          <h1>DevDetective</h1>
+          <div class="theme-container">
+            <button class="dark-theme">
+              <p class="dark">DARK</p>
+              <i class="fa-solid fa-moon"></i>
+            </button>
+            <button class="light-theme">
+              <p class="light">LIGHT</p>
+             <img src="./images/sun-icon.svg" alt="">
+            </button>
+          </div>
+        </header>
+        <!---- FORM ---->
+        <form class="form-container">
+          <div class="search-side">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="inputField" type="search" placeholder="Enter a GitHub Username..." required>
+          <div class="error">
+            <p id="no-results">no search results</p>
+        </div>
+          </div>
+          <button class="searchButton">Search</button>
+        </form>
+         <!-- PROFILE -->
+          <div class="profile-container">
+            <div class="img-container">
+              <img class="profileImg" src="">
+            </div>
+            <div class="aside-container">
+                <div class="namendate">
+                  <h2 class="name"></h2>
+                  <p class="date"></p>
+                </div>
+
+                <a class="profileLink"></a>
+                <div class="bio"></div>
+    
+                <!--REPOS FOLLOWERS AND FOLLOWING-->
+                <div class="stats">
+                  <div class="Repo-fol-flw">
+                    <div class="repo">
+                      <p>Repos</p>
+                      <p class="repo-count"></p>
+                    </div>
+                    <div class="followers">
+                      <p>Followers</p>
+                      <p class="follow-count"></p>
+                    </div>
+                    <div class="following">
+                      <p>Following</p>
+                      <p class="following-count"></p>
+                    </div>
+                  </div>
+                </div>
+                <!--User Info-->
+              <div class="user-info-container">
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p class="location-content"></p>
+                </div>
+                <div class="linkedin">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a class="linkedin-content"></a>
+                </div>
+                <div class="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                  <p class="twitter-content"></p>
+                </div>
+                <div class="company">
+                  <i class="fa-sharp fa-solid fa-building"></i>
+                  <p class="company-content"></p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
